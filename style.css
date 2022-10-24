@@ -251,3 +251,37 @@ body {
     background-size: cover;
     height: 600px;
 }
+
+/* Section Store */
+.store {
+    background-color: #FAFAFC;
+    padding: 100px 120px;
+}
+
+.store_context {
+    width: 600px;
+    height: 135px;
+}
+
+.red_subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #FF8A63;
+}
+
+.store_title {
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #45525B;
+}
+
+.store_text {
+    font-size: 18px;
+    line-height: 22px;
+    
+    color: #6F7278;
+}
