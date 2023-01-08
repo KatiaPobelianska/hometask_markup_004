@@ -3,22 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Color`s priority */
-/* body {
-    font-size: 26px;
-}
-
-p {
-    color: green;
-}
-
-.color1 {
-    color: red;
-}
-
-#color_id {
-    color: aqua !important;
-} */
 
 html,
 body {
@@ -37,6 +21,9 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
+}
+img {
+    display: block;
 }
 .header_wrapper {
     display: flex;
@@ -88,14 +75,15 @@ body {
 /* Section Goal */
 
 .goal {
-    padding: 100px 136px;
+    padding: 100px 130px;
+    background-color: #FAFAFC;;
 }
 
 .goal_wrapper {
     width: 1168px;
     display: flex;
     justify-content: center;
-    align-items: center;
+
 }
 
 .goal_block1 {
@@ -170,14 +158,14 @@ body {
 }
 
 /* Section Choise */
-
+.choise {
+    padding: 100px 136px;
+}
 .choise_content {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     margin-bottom: 30px;
-    width: 600px;
-    text-align: center;
-    
+    min-width: 600px;
+    text-align: center;   
 }
 
 .choise_subtitle {
@@ -199,13 +187,13 @@ body {
 
 .choise_big_block {
     display: flex;
-    position: relative;  
+    justify-content: space-between;
+    padding-left: 178px;
+    padding-right: 178px;
 }
 
 .choise_hero {
-    position: absolute;
-    top: 5px;
-    right: 530px;
+   
 }
 
 .choise_hero_img {
@@ -214,9 +202,7 @@ body {
 }
 
 .choise_small_block {
-    position: absolute;
-    top: 45px;
-    left: 705px;
+ 
 }
 
 .choise_block1_subtitle {
@@ -238,7 +224,13 @@ body {
 } */
 
 .choise_block1 {
-    width: 300px;
+   width: 300px;
+}
+.choise_block1:hover,
+.choise_block1:focus {
+    background-color: #FAFAFC;
+    border: 1px solid rgba(202, 204, 209, 0.2);
+    border-radius: 10px;
 }
 .choise_block1:not(:last-child) {
     margin-bottom: 20px;
@@ -261,6 +253,7 @@ body {
 .store_context {
     width: 600px;
     height: 135px;
+    margin-bottom: 30px;
 }
 
 .red_subtitle {
@@ -275,13 +268,35 @@ body {
 .store_title {
     font-size: 36px;
     line-height: 43px;
+    margin-bottom: 16px;
 
     color: #45525B;
 }
 
 .store_text {
     font-size: 18px;
-    line-height: 22px;
+    line-height: calc(22px/18px);
     
+    color: #6F7278;
+}
+.store_houses {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-right: -15px;
+}
+.store_house {
+    margin-left: 15px;
+    padding: 22px 16px;
+}
+.store_house:nth-child(-n + 3) {
+    margin-bottom: 20px;
+}
+.store_house_subtitle {
+    font-size: 12px;
+    line-height: calc(17px/12px);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
     color: #6F7278;
 }
